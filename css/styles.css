@@ -202,9 +202,6 @@ body.modal-open {
   gap: 40px;
 }
 
-.contacts .social {
-  justify-content: space-between;
-}
 .phone-number {
   font-weight: 700;
   font-size: 36px;
@@ -575,7 +572,7 @@ body.modal-open {
   width: 100%;
 }
 .member-con {
-  padding: 32px 0;
+  padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
 .member-title {
@@ -599,8 +596,7 @@ body.modal-open {
 }
 .social {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
 }
 .soc-item {
   width: 40px;
@@ -698,6 +694,7 @@ body.modal-open {
 }
 .soc-cont {
   margin-bottom: 72px;
+  padding: 0 64px;
 }
 .soc-info {
   color: #ffffff;
@@ -880,4 +877,123 @@ body.modal-open {
     (100% - (24px * (var(--portfolio-in-line) - 1))) / var(--portfolio-in-line)
   );
   max-width: 396px;
+}
+
+/**
+  |============================
+  | FOR TABLET
+  |============================
+*/
+@media (min-width: 428px) {
+  :root {
+    /* lists const */
+    --qality-in-line: 2;
+    --doing-in-line: 1;
+    --members-in-line: 2;
+    --customers-in-line: 3;
+    --portfolio-in-line: 2;
+  }
+  /**
+    |============================
+    | Header
+    |============================
+  */
+
+  .navigation {
+    width: 60%;
+  }
+  .menu-button,
+  .our-contacts .social,
+  .menu-container .close-button {
+    display: none;
+  }
+  .menu-container {
+    width: 75%;
+    position: relative;
+    flex-direction: row;
+    padding: 0;
+  }
+  .menu-container.is-close {
+    transform: translateY(0%);
+  }
+
+  .site-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .site-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 24px 0;
+  }
+  .our-contacts {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .phone-number,
+  .our-mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+
+  /**
+    |============================
+    | Main
+    |============================
+  */
+  .qalities {
+    justify-content: space-between;
+  }
+  .team-list {
+    max-width: 552px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .customers-list {
+    max-width: 552px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /**
+    |============================
+    | Footer
+    |============================
+  */
+  .foot-cont {
+    max-width: 552px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .foot-cont > .logo-cont {
+    padding: 0;
+    max-width: 264px;
+    margin-right: 24px;
+    text-align: left;
+  }
+  .foot-cont > .soc-cont {
+    padding: 0;
+  }
+  .soc-info {
+    text-align: left;
+  }
+  .soc-cont .social {
+    gap: 16px;
+  }
+  .subscribe-field {
+    display: flex;
+  }
+  .subscribe-input {
+    width: 264px;
+    margin: 0;
+    margin-right: 24px;
+  }
 }
