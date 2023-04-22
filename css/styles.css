@@ -709,7 +709,8 @@ body.modal-open {
   background-color: var(--bgc-hero-footer);
 }
 .logo-cont {
-  padding: 0 64px;
+  max-width: 264px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 72px;
 }
@@ -726,8 +727,9 @@ body.modal-open {
   color: var(--font-logo-foot);
 }
 .soc-cont {
+  margin: 0 auto;
   margin-bottom: 72px;
-  padding: 0 64px;
+  max-width: 208px;
 }
 .soc-info {
   color: #ffffff;
@@ -804,9 +806,9 @@ body.modal-open {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 40px;
-  row-gap: 24px;
+  justify-content: left;
+  column-gap: 24px;
+  row-gap: 16px;
   margin-bottom: 48px;
 }
 .filter-button {
@@ -1023,11 +1025,14 @@ body.modal-open {
   }
   .foot-cont > .logo-cont {
     padding: 0;
+    margin: 0;
     max-width: 264px;
     margin-right: 24px;
+    margin-bottom: 72px;
     text-align: left;
   }
   .foot-cont > .soc-cont {
+    margin: 0;
     padding: 0;
   }
   .soc-info {
@@ -1060,7 +1065,7 @@ body.modal-open {
     row-gap: 72px;
   }
   .filter-list {
-    gap: 24px;
+    justify-content: center;
     margin-bottom: 64px;
   }
   .app-list {
@@ -1147,6 +1152,9 @@ body.modal-open {
   .section:nth-child(2) {
     padding: 120px 0;
   }
+  .qality-title {
+    font-size: 20px;
+  }
   .qality-cont {
     display: flex;
   }
@@ -1193,10 +1201,15 @@ body.modal-open {
     | FOOTER
     |============================
   */
+  .foot {
+    padding: 100px 0;
+  }
   .foot-cont .logo-cont {
+    margin: 0;
     margin-right: 120px;
   }
   .foot-cont .soc-cont {
+    margin: 0;
     margin-right: 80px;
   }
 
